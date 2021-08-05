@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>E-sports Team page</title>
+    </head>
+    <body>
+        <section class = "showcase">
+            <header>
+                <h2 class="logo">E-Sports</h2>
+                <div class="toggle"></div>
+            </header>
+            <video src="Media/DigiEarth.mp4" muted loop autoplay height="700px" width="1250px"></video>
+                
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>Never Stop</h2>
+                <h3>Dominating the Competition</h3>
+                <p>Create your own team with team-mates that you synergize with Best!
+                    Start your professional career with your team! Compete at the highest level!
+                </p>
+                <a href="#">Explore</a>
+            </div>
+            <ul class="social">
+                <li><a href="#"><img src="Media/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="Media/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Top Teams</a></li>
+                <li><a href="#">New Team</a></li>
+                <li><a href="#">Games</a></li>
+            </ul>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click',()=>{
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
